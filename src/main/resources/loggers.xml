@@ -3,33 +3,33 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="consoleLogger" class="com.yet.spring.core.loggers.ConsoleEventLogger"/>
+    <!--<bean id="consoleLogger" class="com.yet.spring.core.loggers.ConsoleEventLogger"/>-->
 
-    <bean id="fileLogger" class="com.yet.spring.core.loggers.FileEventLogger">
-        <constructor-arg value="D:/1.txt"/>
-    </bean>
+    <!--<bean id="fileLogger" class="com.yet.spring.core.loggers.FileEventLogger">-->
+        <!--<constructor-arg value="D:/1.txt"/>-->
+    <!--</bean>-->
 
-    <bean id="cacheLogger" class="com.yet.spring.core.loggers.CacheFileEventLogger"
-           parent="fileLogger">
-        <constructor-arg index="1" value="5"/>
-    </bean>
+    <!--<bean id="cacheLogger" class="com.yet.spring.core.loggers.CacheFileEventLogger"-->
+           <!--parent="fileLogger">-->
+        <!--<constructor-arg index="1" value="5"/>-->
+    <!--</bean>-->
 
-    <bean id="combineLogger" class="com.yet.spring.core.loggers.CombineEventLogger">
-        <constructor-arg>
-            <list>
-                <ref bean="consoleLogger"/>
-                <ref bean="fileLogger"/>
-            </list>
-        </constructor-arg>
-    </bean>
+    <!--<bean id="combineLogger" class="com.yet.spring.core.loggers.CombineEventLogger">-->
+        <!--<constructor-arg>-->
+            <!--<list>-->
+                <!--<ref bean="consoleLogger"/>-->
+                <!--<ref bean="fileLogger"/>-->
+            <!--</list>-->
+        <!--</constructor-arg>-->
+    <!--</bean>-->
 
-    <bean id="event" class="com.yet.spring.core.beans.Event" scope="prototype">
-        <constructor-arg>
-            <bean class="java.util.Date"/>
-        </constructor-arg>
-        <constructor-arg ref="dateFormat"/>
-    </bean>
+    <!--<bean id="event" class="com.yet.spring.core.beans.Event" scope="prototype">-->
+        <!--<constructor-arg>-->
+            <!--<bean class="java.util.Date"/>-->
+        <!--</constructor-arg>-->
+        <!--<constructor-arg ref="dateFormat"/>-->
+    <!--</bean>-->
 
-    <bean id="dateFormat" class="java.text.DateFormat"
-          factory-method="getDateTimeInstance"/>
+    <!--<bean id="dateFormat" class="java.text.DateFormat"-->
+          <!--factory-method="getDateTimeInstance"/>-->
 </beans>

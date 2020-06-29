@@ -1,6 +1,7 @@
 package com.yet.spring.core.loggers;
 
 import com.yet.spring.core.beans.Event;
+import org.springframework.stereotype.Component;
 
 import java.util.Collection;
 import java.util.Collections;
