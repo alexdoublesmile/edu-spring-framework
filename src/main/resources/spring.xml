@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-3.2.xsd
+       http://www.springframework.org/schema/util
+       http://www.springframework.org/schema/util/spring-util-3.2.xsd">
+
+    <import resource="loggers.xml"/>
+    <context:component-scan base-package="com.yet.spring.core"/>
+
+    <util:map id="loggerMap">
+        <entry key="INFO" value-ref="consoleLogger"/>
+        <entry key="ERROR" value-ref="combineLogger"/>
+    </util:map>
+    <util:properties id="clientProperties" location="classpath:client.properties"/>
+
+    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer"
+          p:location="client.properties">
+        <property name="systemPropertiesModeName" value="SYSTEM_PROPERTIES_MODE_OVERRIDE" />
+    </bean>
+
+    <bean id="app" class="com.yet.spring.core.App" autowire="constructor"
+          c:logger-ref="cacheLogger"
+          c:loggers-ref="loggerMap"/>
+
+    <bean id="client" class="com.yet.spring.core.beans.Client"
+          p:greeting="${greeting}"
+          c:id="${id}"
+          c:fullName="${name}"/>
+
+</beans>
