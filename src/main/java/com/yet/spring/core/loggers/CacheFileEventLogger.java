@@ -9,7 +9,7 @@ import javax.annotation.PreDestroy;
 import java.util.ArrayList;
 import java.util.List;
 
-@Component("cacheLogger")
+@Component
 @DefaultLogger
 public class CacheFileEventLogger extends FileEventLogger {
     @Value("${cache.size}")

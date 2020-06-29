@@ -2,22 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0ee4afb-3903-4bee-9bd5-9a4f50338623" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yet/spring/core/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yet/spring/core/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yet/spring/core/beans/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yet/spring/core/beans/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/CacheFileEventLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/CacheFileEventLogger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/CombineEventLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/CombineEventLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/ConsoleEventLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/ConsoleEventLogger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/FileEventLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/FileEventLogger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yet/spring/core/spring/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yet/spring/core/spring/AppConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yet/spring/core/spring/LoggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yet/spring/core/spring/LoggerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/client.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/client.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yet/spring/core/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yet/spring/core/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yet/spring/core/beans/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yet/spring/core/beans/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yet/spring/core/loggers/CacheFileEventLogger.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yet/spring/core/loggers/CacheFileEventLogger.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yet/spring/core/loggers/FileEventLogger.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yet/spring/core/loggers/FileEventLogger.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yet/spring/core/spring/AppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yet/spring/core/spring/AppConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yet/spring/core/spring/LoggerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yet/spring/core/spring/LoggerConfig.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+            <state relative-caret-position="343">
+              <caret line="36" column="15" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#867#982#1" expanded="true" />
@@ -42,13 +32,17 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/ConsoleEventLogger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="68">
+              <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#236#237#0" expanded="true" />
+                <element signature="e#268#269#0" expanded="true" />
+                <element signature="e#308#309#0" expanded="true" />
+                <element signature="e#360#361#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -69,8 +63,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/spring/AppConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="32" column="33" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="33" />
+            <state relative-caret-position="241">
+              <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -81,20 +75,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/spring/LoggerConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/CombineEventLogger.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+            <state relative-caret-position="187">
+              <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -105,13 +87,15 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/FileEventLogger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="37" column="86" selection-start-line="37" selection-start-column="86" selection-end-line="37" selection-end-column="86" />
+            <state relative-caret-position="187">
+              <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#491#508#1" expanded="true" />
-                <element signature="e#560#561#0" expanded="true" />
-                <element signature="e#600#601#0" expanded="true" />
+                <element signature="e#415#432#1" expanded="true" />
+                <element signature="e#546#547#0" expanded="true" />
+                <element signature="e#586#587#0" expanded="true" />
+                <element signature="e#1189#1190#0" expanded="true" />
+                <element signature="e#1221#1222#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -120,11 +104,15 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/CacheFileEventLogger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+            <state relative-caret-position="187">
+              <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#426#441#1" expanded="true" />
+                <element signature="e#411#426#1" expanded="true" />
+                <element signature="e#921#922#0" expanded="true" />
+                <element signature="e#971#972#0" expanded="true" />
+                <element signature="e#1404#1405#0" expanded="true" />
+                <element signature="e#1436#1437#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -173,15 +161,15 @@
         <option value="$PROJECT_DIR$/src/main/java/com/yet/spring/core/beans/Client.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/yet/spring/core/beans/EventTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yet/spring/core/spring/AppConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yet/spring/core/spring/LoggerConfig.java" />
         <option value="$PROJECT_DIR$/src/main/resources/client.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/logger.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/CacheFileEventLogger.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yet/spring/core/spring/AppConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/FileEventLogger.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/CombineEventLogger.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yet/spring/core/App.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/ConsoleEventLogger.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yet/spring/core/spring/LoggerConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/CombineEventLogger.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/CacheFileEventLogger.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yet/spring/core/App.java" />
       </list>
     </option>
   </component>
@@ -317,7 +305,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1593449940405" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1593457593559" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -421,7 +409,7 @@
       <workItem from="1593282623109" duration="5487000" />
       <workItem from="1593351237707" duration="2838000" />
       <workItem from="1593410476461" duration="9135000" />
-      <workItem from="1593444625031" duration="4814000" />
+      <workItem from="1593444625031" duration="6056000" />
     </task>
     <servers />
   </component>
@@ -434,13 +422,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64943000" />
+    <option name="totallyTimeSpent" value="66185000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2835821" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2835821" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -450,7 +438,7 @@
       <window_info anchor="bottom" id="Java Enterprise" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32917964" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.32917964" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.32917964" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997923" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -606,26 +594,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/CacheFileEventLogger.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/FileEventLogger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        <state relative-caret-position="187">
+          <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#426#441#1" expanded="true" />
+            <element signature="e#415#432#1" expanded="true" />
+            <element signature="e#546#547#0" expanded="true" />
+            <element signature="e#586#587#0" expanded="true" />
+            <element signature="e#1189#1190#0" expanded="true" />
+            <element signature="e#1221#1222#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/FileEventLogger.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/ConsoleEventLogger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="37" column="86" selection-start-line="37" selection-start-column="86" selection-end-line="37" selection-end-column="86" />
+        <state relative-caret-position="68">
+          <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#491#508#1" expanded="true" />
-            <element signature="e#560#561#0" expanded="true" />
-            <element signature="e#600#601#0" expanded="true" />
+            <element signature="e#236#237#0" expanded="true" />
+            <element signature="e#268#269#0" expanded="true" />
+            <element signature="e#308#309#0" expanded="true" />
+            <element signature="e#360#361#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -633,27 +626,23 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/CombineEventLogger.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/spring/LoggerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#522#523#0" expanded="true" />
+            <element signature="e#560#561#0" expanded="true" />
+            <element signature="e#763#764#0" expanded="true" />
+            <element signature="e#829#830#0" expanded="true" />
+            <element signature="e#886#887#0" expanded="true" />
+            <element signature="e#918#919#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/spring/AppConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="32" column="33" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="33" />
+        <state relative-caret-position="241">
+          <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -670,23 +659,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/App.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/CacheFileEventLogger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+        <state relative-caret-position="187">
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#867#982#1" expanded="true" />
+            <element signature="e#411#426#1" expanded="true" />
+            <element signature="e#921#922#0" expanded="true" />
+            <element signature="e#971#972#0" expanded="true" />
+            <element signature="e#1404#1405#0" expanded="true" />
+            <element signature="e#1436#1437#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/ConsoleEventLogger.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/spring/LoggerConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="187">
+          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="36" column="15" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#867#982#1" expanded="true" />
           </folding>
         </state>
       </provider>

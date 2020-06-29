@@ -2,7 +2,7 @@ package com.yet.spring.core.loggers;
 
 import com.yet.spring.core.beans.Event;
 import org.springframework.stereotype.Component;
-@Component("consoleLogger")
+@Component
 public class ConsoleEventLogger extends AbstractLogger {
 
     protected void setName(String name) {

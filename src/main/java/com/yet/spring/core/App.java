@@ -3,6 +3,7 @@ package com.yet.spring.core;
 import com.yet.spring.core.beans.Client;
 import com.yet.spring.core.beans.Event;
 import com.yet.spring.core.beans.EventType;
+import com.yet.spring.core.loggers.DefaultLogger;
 import com.yet.spring.core.loggers.EventLogger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -21,7 +22,7 @@ public class App {
     @Autowired
     private Client client;
 
-    @Value("#{ T(com.yet.spring.core.beans.Event).isDay(${log.start.time},${log.finish.time}) ? cacheLogger : consoleLogger }")
+    @Value("#{ T(com.yet.spring.core.beans.Event).isDay(${log.start.time},${log.finish.time}) ? cacheEventLogger : consoleEventLogger }")
     private EventLogger logger;
 
     @Autowired
@@ -33,10 +34,7 @@ public class App {
 
     private Event event;
 
-    public App(Client client, @Qualifier("cacheLogger") EventLogger logger, Map<EventType, EventLogger> loggers) {
-        this.client = client;
-        this.logger = logger;
-        this.loggers = loggers;
+    public App() {
     }
 
     public static void main(String[] args) {

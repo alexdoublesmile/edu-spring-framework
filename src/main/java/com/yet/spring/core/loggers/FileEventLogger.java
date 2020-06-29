@@ -9,7 +9,7 @@ import javax.annotation.PostConstruct;
 import java.io.File;
 import java.io.IOException;
 
-@Component("fileLogger")
+@Component
 public class FileEventLogger extends AbstractLogger {
     private File file;
     @Value("${logfile.name}")

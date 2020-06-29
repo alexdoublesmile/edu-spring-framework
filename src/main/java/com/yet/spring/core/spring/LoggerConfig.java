@@ -15,13 +15,13 @@ import java.util.Map;
 @Configuration
 public class LoggerConfig {
     @Autowired
-    @Resource(name = "consoleLogger")
+    @Resource(name = "consoleEventLogger")
     private EventLogger consoleEventLogger;
     @Autowired
-    @Resource(name = "fileLogger")
+    @Resource(name = "fileEventLogger")
     private EventLogger fileEventLogger;
     @Autowired
-    @Resource(name = "combineLogger")
+    @Resource(name = "combineEventLogger")
     private EventLogger combineEventLogger;
 
 //    @Bean

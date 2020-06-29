@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 import javax.annotation.Resource;
 import java.util.Collection;
 import java.util.Collections;
-@Component("combineLogger")
+@Component
 public class CombineEventLogger extends AbstractLogger {
     @Autowired
     @Resource(name = "combinedLoggers")
