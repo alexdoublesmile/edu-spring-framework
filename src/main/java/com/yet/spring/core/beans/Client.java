@@ -1,19 +1,11 @@
 package com.yet.spring.core.beans;
 
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
-
-@Component
 public class Client {
-    @Value("1")
     private String id;
-    @Value("Alexandr")
     private String fullName;
-    @Value("Hi, there!")
     private String greeting;
 
     public Client() {
-
     }
 
     public Client(String id, String fullName) {

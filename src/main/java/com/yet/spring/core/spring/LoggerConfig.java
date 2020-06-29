@@ -1,7 +1,7 @@
 package com.yet.spring.core.spring;
 
 import com.yet.spring.core.beans.EventType;
-import com.yet.spring.core.loggers.*;
+import com.yet.spring.core.loggers.EventLogger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -21,8 +21,13 @@ public class LoggerConfig {
     @Resource(name = "fileLogger")
     private EventLogger fileEventLogger;
     @Autowired
-    @Resource(name = "combineEventLogger")
+    @Resource(name = "combineLogger")
     private EventLogger combineEventLogger;
+
+//    @Bean
+//    public static PropertySourcesPlaceholderConfigurer propertyConfigIn() {
+//        return new PropertySourcesPlaceholderConfigurer();
+//    }
 
     @Bean
     public Map<EventType, EventLogger> loggerMap() {

@@ -10,15 +10,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Component("cacheLogger")
+@DefaultLogger
 public class CacheFileEventLogger extends FileEventLogger {
-    @Value("5")
+    @Value("${cache.size}")
     private int cacheSize;
     private List<Event> cache;
 
     public CacheFileEventLogger() {
     }
 
-    public CacheFileEventLogger(@Value("D:/1.txt") String fileName, int cacheSize) {
+    public CacheFileEventLogger(@Value("${logfile.name}") String fileName, int cacheSize) {
         super(fileName);
         this.cacheSize = cacheSize;
     }

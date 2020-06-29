@@ -1,29 +1,39 @@
 package com.yet.spring.core.spring;
 
-import com.yet.spring.core.App;
 import com.yet.spring.core.beans.Client;
-import com.yet.spring.core.beans.EventType;
-import com.yet.spring.core.loggers.EventLogger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-
-import javax.annotation.Resource;
-import java.util.Map;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.core.env.Environment;
 
 @Configuration
+@PropertySource({
+        "classpath:client.properties",
+        "classpath:logger.properties"
+})
 public class AppConfig {
     @Autowired
-    private Client client;
-    @Autowired
-    @Resource(name = "cacheLogger")
-    private EventLogger logger;
-    @Autowired
-    @Resource(name = "loggerMap")
-    private Map<EventType, EventLogger> loggers;
+    private Environment environment;
+
+//    @Autowired
+//    @DefaultLogger
+//    private EventLogger logger;
+//    @Autowired
+//    @Resource(name = "loggerMap")
+//    private Map<EventType, EventLogger> loggers;
+//
+//    @Bean
+//    public App app() {
+//        return new App(client(), logger, loggers);
+//    }
 
     @Bean
-    public App app() {
-        return new App(client, logger, loggers);
+    public Client client() {
+        Client client = new Client();
+        client.setId(environment.getRequiredProperty("id"));
+        client.setFullName(environment.getRequiredProperty("name"));
+        client.setGreeting(environment.getRequiredProperty("greeting"));
+        return client;
     }
 }

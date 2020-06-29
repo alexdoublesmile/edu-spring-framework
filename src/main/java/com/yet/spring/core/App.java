@@ -4,25 +4,36 @@ import com.yet.spring.core.beans.Client;
 import com.yet.spring.core.beans.Event;
 import com.yet.spring.core.beans.EventType;
 import com.yet.spring.core.loggers.EventLogger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.util.Map;
 
 import static com.yet.spring.core.beans.EventType.ERROR;
 import static com.yet.spring.core.beans.EventType.INFO;
-
+@Service
 public class App {
+    @Autowired
     private Client client;
+
+    @Value("#{ T(com.yet.spring.core.beans.Event).isDay(${log.start.time},${log.finish.time}) ? cacheLogger : consoleLogger }")
     private EventLogger logger;
+
+    @Autowired
+    @Resource(name = "loggerMap")
     private Map<EventType, EventLogger> loggers;
 
     @Value("#{'Hello user, ' + (systemProperties['os.name'].contains('Windows') ? systemEnvironment['USERNAME'] : systemEnvironment['USER'])}")
     private String startUpMessage;
+
     private Event event;
 
-    public App(Client client, EventLogger logger, Map<EventType, EventLogger> loggers) {
+    public App(Client client, @Qualifier("cacheLogger") EventLogger logger, Map<EventType, EventLogger> loggers) {
         this.client = client;
         this.logger = logger;
         this.loggers = loggers;

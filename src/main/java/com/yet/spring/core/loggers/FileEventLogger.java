@@ -12,7 +12,7 @@ import java.io.IOException;
 @Component("fileLogger")
 public class FileEventLogger extends AbstractLogger {
     private File file;
-    @Value("D:/1.txt")
+    @Value("${logfile.name}")
     private String fileName;
 
     public FileEventLogger() {
