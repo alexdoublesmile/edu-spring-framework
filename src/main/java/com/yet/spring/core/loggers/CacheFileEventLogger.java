@@ -2,6 +2,8 @@ package com.yet.spring.core.loggers;
 
 import com.yet.spring.core.beans.Event;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,7 +17,6 @@ public class CacheFileEventLogger extends FileEventLogger {
     public CacheFileEventLogger(String fileName, int cacheSize) {
         super(fileName);
         this.cacheSize = cacheSize;
-        cache = new ArrayList<>(cacheSize);
     }
 
     public void logEvent(Event event) {
@@ -27,10 +28,12 @@ public class CacheFileEventLogger extends FileEventLogger {
         }
     }
 
+    @PostConstruct
     private void initCache() {
         cache = new ArrayList<>(cacheSize);
     }
 
+    @PreDestroy
     private void destroy() {
         if (!cache.isEmpty()) {
             writeEventsFromCache();

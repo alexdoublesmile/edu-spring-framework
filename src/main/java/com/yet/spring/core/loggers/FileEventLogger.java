@@ -3,6 +3,7 @@ package com.yet.spring.core.loggers;
 import com.yet.spring.core.beans.Event;
 import org.apache.commons.io.FileUtils;
 
+import javax.annotation.PostConstruct;
 import java.io.File;
 import java.io.IOException;
 
@@ -17,6 +18,7 @@ public class FileEventLogger extends AbstractLogger {
         this.fileName = fileName;
     }
 
+    @PostConstruct
     private void init() throws IOException {
         file = new File(fileName);
         if (file.exists() && !file.canWrite()) {
