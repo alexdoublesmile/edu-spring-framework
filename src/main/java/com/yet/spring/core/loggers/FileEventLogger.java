@@ -2,14 +2,17 @@ package com.yet.spring.core.loggers;
 
 import com.yet.spring.core.beans.Event;
 import org.apache.commons.io.FileUtils;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 import java.io.File;
 import java.io.IOException;
 
+@Component("fileLogger")
 public class FileEventLogger extends AbstractLogger {
     private File file;
+    @Value("D:/1.txt")
     private String fileName;
 
     public FileEventLogger() {

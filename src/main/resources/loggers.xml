@@ -3,18 +3,18 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <!--<bean id="consoleLogger" class="com.yet.spring.core.loggers.ConsoleEventLogger"/>-->
+    <!--<bean id="consoleLogger" class="com.yet.spring.core.loggerMap.ConsoleEventLogger"/>-->
 
-    <!--<bean id="fileLogger" class="com.yet.spring.core.loggers.FileEventLogger">-->
+    <!--<bean id="fileLogger" class="com.yet.spring.core.loggerMap.FileEventLogger">-->
         <!--<constructor-arg value="D:/1.txt"/>-->
     <!--</bean>-->
 
-    <!--<bean id="cacheLogger" class="com.yet.spring.core.loggers.CacheFileEventLogger"-->
+    <!--<bean id="cacheLogger" class="com.yet.spring.core.loggerMap.CacheFileEventLogger"-->
            <!--parent="fileLogger">-->
         <!--<constructor-arg index="1" value="5"/>-->
     <!--</bean>-->
 
-    <!--<bean id="combineLogger" class="com.yet.spring.core.loggers.CombineEventLogger">-->
+    <!--<bean id="combineLogger" class="com.yet.spring.core.loggerMap.CombineEventLogger">-->
         <!--<constructor-arg>-->
             <!--<list>-->
                 <!--<ref bean="consoleLogger"/>-->

@@ -12,7 +12,7 @@
        http://www.springframework.org/schema/util
        http://www.springframework.org/schema/util/spring-util-3.2.xsd">
 
-    <!--<import resource="loggers.xml"/>-->
+    <!--<import resource="loggerMap.xml"/>-->
     <context:component-scan base-package="com.yet.spring.core"/>
 
     <!--<util:map id="loggerMap">-->
@@ -28,7 +28,7 @@
 
     <!--<bean id="app" class="com.yet.spring.core.App"-->
           <!--c:logger-ref="cacheLogger"-->
-          <!--c:loggers-ref="loggerMap"/>-->
+          <!--c:loggerMap-ref="loggerMap"/>-->
 
     <!--<bean id="client" class="com.yet.spring.core.beans.Client"-->
           <!--p:greeting="${greeting}"-->

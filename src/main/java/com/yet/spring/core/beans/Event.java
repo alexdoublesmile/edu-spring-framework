@@ -1,17 +1,25 @@
 package com.yet.spring.core.beans;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
 import java.text.DateFormat;
 import java.time.LocalTime;
 import java.util.Date;
 import java.util.Objects;
 import java.util.concurrent.atomic.AtomicInteger;
 
+@Component
+@Scope("prototype")
 public class Event {
     private static final AtomicInteger AUTO_ID = new AtomicInteger(1);
 
     private int id;
     private String message;
+    @Value("#{new java.util.Date()}")
     private Date date;
+    @Value("#{T(java.text.DateFormat).getDateTimeInstance()}")
     private DateFormat formatter;
 
     public Event() {
