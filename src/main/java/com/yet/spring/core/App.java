@@ -22,7 +22,7 @@ public class App {
     @Autowired
     private Client client;
 
-    @Value("#{ T(com.yet.spring.core.beans.Event).isDay(${log.start.time},${log.finish.time}) ? cacheEventLogger : consoleEventLogger }")
+    @Value("#{ T(com.yet.spring.core.beans.Event).isDay(${log.start.time},${log.finish.time}) ? cacheFileEventLogger : consoleEventLogger }")
     private EventLogger logger;
 
     @Autowired
