@@ -2,6 +2,7 @@ package com.yet.spring.core.loggers;
 
 import com.yet.spring.core.beans.Event;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
@@ -28,6 +29,7 @@ public class CombineEventLogger extends AbstractLogger {
         return Collections.unmodifiableCollection(loggers);
     }
 
+    @Value("#{'Combine ' + combinedLoggers.![name].toString()}")
     @Override
     protected void setName(String name) {
         this.name = name;

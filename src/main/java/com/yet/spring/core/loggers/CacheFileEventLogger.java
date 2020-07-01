@@ -53,6 +53,7 @@ public class CacheFileEventLogger extends FileEventLogger {
                 });
     }
 
+    @Value("#{fileEventLogger.name + ' with cache'}")
     @Override
     protected void setName(String name) {
         this.name = name;

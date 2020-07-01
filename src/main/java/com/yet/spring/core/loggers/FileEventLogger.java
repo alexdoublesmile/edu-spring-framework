@@ -34,12 +34,13 @@ public class FileEventLogger extends AbstractLogger {
 
     public void logEvent(Event event) {
         try {
-            FileUtils.writeStringToFile(file, event.toString() + " - fileLogger", true);
+            FileUtils.writeStringToFile(file, event.toString(), true);
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
+    @Value("File Logger")
     @Override
     protected void setName(String name) {
         this.name = name;
