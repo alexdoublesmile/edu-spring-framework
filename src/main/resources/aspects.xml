@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop-3.2.xsd">
+
+    <import resource="loggers.xml"/>
+    <bean id="consoleLimitAspect" class="com.yet.spring.core.aspects.ConsoleLoggerLimitAspect"
+          c:maxCount="2"
+          c:logger-ref="fileLogger"/>
+    <bean id="loggingAspect" class="com.yet.spring.core.aspects.LoggingAspect"/>
+    <bean id="statisticAspect" class="com.yet.spring.core.aspects.StatisticAspect"/>
+
+    <aop:config>
+        <aop:aspect ref="consoleLimitAspect">
+            <aop:pointcut id="checkConsoleLimit"
+                          expression="execution(* *.logEvent(com.yet.spring.core.beans.Event))
+                          and within(com.yet.spring.core.loggers.ConsoleEventLogger) and args(evt)"/>
+            <aop:around pointcut-ref="checkConsoleLimit" method="aroundLogEvent" arg-names="joinPoint,evt"/>
+        </aop:aspect>
+        <aop:aspect ref="loggingAspect">
+            <aop:pointcut id="allLogEventMethods" expression="execution(* *.logEvent(..))"/>
+            <aop:pointcut id="logEventInsideFileLoggers" expression="execution(* *.logEvent(..)) and within(*.*File*Logger)"/>
+            <aop:before pointcut-ref="allLogEventMethods" method="logBefore"/>
+            <aop:after-returning pointcut-ref="allLogEventMethods" returning="retVal" method="logAfter"/>
+            <aop:after-throwing pointcut-ref="allLogEventMethods" throwing="ex" method="logAfterThrow"/>
+        </aop:aspect>
+        <aop:aspect ref="statisticAspect">
+            <aop:pointcut id="allLogEventMethods" expression="execution(* *.logEvent(..))"/>
+            <aop:after-returning pointcut-ref="allLogEventMethods" method="count"/>
+            <aop:after-returning pointcut="execution(* com.yet.spring.core.App.logEvents(..))" method="outputLoggingCounter"/>
+        </aop:aspect>
+    </aop:config>
+</beans>

@@ -9,10 +9,10 @@ import javax.annotation.PostConstruct;
 import java.io.File;
 import java.io.IOException;
 
-@Component
+//@Component
 public class FileEventLogger extends AbstractLogger {
     private File file;
-    @Value("${logfile.name}")
+//    @Value("${logfile.name}")
     private String fileName;
 
     public FileEventLogger() {
@@ -22,7 +22,7 @@ public class FileEventLogger extends AbstractLogger {
         this.fileName = fileName;
     }
 
-    @PostConstruct
+//    @PostConstruct
     private void init() throws IOException {
         file = new File(fileName);
         if (file.exists() && !file.canWrite()) {
@@ -40,7 +40,7 @@ public class FileEventLogger extends AbstractLogger {
         }
     }
 
-    @Value("File Logger")
+//    @Value("File Logger")
     @Override
     protected void setName(String name) {
         this.name = name;

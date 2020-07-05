@@ -10,16 +10,16 @@ import java.util.Date;
 import java.util.Objects;
 import java.util.concurrent.atomic.AtomicInteger;
 
-@Component
-@Scope("prototype")
+//@Component
+//@Scope("prototype")
 public class Event {
     private static final AtomicInteger AUTO_ID = new AtomicInteger(1);
 
     private int id;
     private String message;
-    @Value("#{new java.util.Date()}")
+//    @Value("#{new java.util.Date()}")
     private Date date;
-    @Value("#{T(java.text.DateFormat).getDateTimeInstance()}")
+//    @Value("#{T(java.text.DateFormat).getDateTimeInstance()}")
     private DateFormat formatter;
 
     public Event() {

@@ -4,16 +4,18 @@ import com.yet.spring.core.beans.Client;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
 
-@Configuration
-@PropertySource({
-        "classpath:client.properties",
-        "classpath:logger.properties"
-})
+//@Configuration
+//@EnableAspectJAutoProxy
+//@PropertySource({
+//        "classpath:client.properties",
+//        "classpath:logger.properties"
+//})
 public class AppConfig {
-    @Autowired
+//    @Autowired
     private Environment environment;
 
 //    @Autowired
@@ -28,7 +30,7 @@ public class AppConfig {
 //        return new App(client(), logger, loggers);
 //    }
 
-    @Bean
+//    @Bean
     public Client client() {
         Client client = new Client();
         client.setId(environment.getRequiredProperty("id"));

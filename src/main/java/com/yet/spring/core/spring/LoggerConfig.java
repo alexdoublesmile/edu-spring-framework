@@ -12,16 +12,16 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
-@Configuration
+//@Configuration
 public class LoggerConfig {
-    @Autowired
-    @Resource(name = "consoleEventLogger")
+//    @Autowired
+//    @Resource(name = "consoleEventLogger")
     private EventLogger consoleEventLogger;
-    @Autowired
-    @Resource(name = "fileEventLogger")
+//    @Autowired
+//    @Resource(name = "fileEventLogger")
     private EventLogger fileEventLogger;
-    @Autowired
-    @Resource(name = "combineEventLogger")
+//    @Autowired
+//    @Resource(name = "combineEventLogger")
     private EventLogger combineEventLogger;
 
 //    @Bean
@@ -29,7 +29,7 @@ public class LoggerConfig {
 //        return new PropertySourcesPlaceholderConfigurer();
 //    }
 
-    @Bean
+//    @Bean
     public Map<EventType, EventLogger> loggerMap() {
         Map<EventType, EventLogger> map = new HashMap<>();
         map.put(EventType.INFO, consoleEventLogger);
@@ -37,7 +37,7 @@ public class LoggerConfig {
         return map;
     }
 
-    @Bean
+//    @Bean
     public Collection<EventLogger> combinedLoggers() {
         Collection<EventLogger> loggers = new ArrayList<>();
         loggers.add(consoleEventLogger);

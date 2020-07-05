@@ -8,10 +8,11 @@ import org.springframework.stereotype.Component;
 import javax.annotation.Resource;
 import java.util.Collection;
 import java.util.Collections;
-@Component
+//@Component
 public class CombineEventLogger extends AbstractLogger {
-    @Autowired
-    @Resource(name = "combinedLoggers")
+
+//    @Autowired
+//    @Resource(name = "combinedLoggers")
     private final Collection<EventLogger> loggers;
 
     public CombineEventLogger(Collection<EventLogger> loggers) {
@@ -29,7 +30,7 @@ public class CombineEventLogger extends AbstractLogger {
         return Collections.unmodifiableCollection(loggers);
     }
 
-    @Value("#{'Combine ' + combinedLoggers.![name].toString()}")
+//    @Value("#{'Combine ' + combinedLoggers.![name].toString()}")
     @Override
     protected void setName(String name) {
         this.name = name;

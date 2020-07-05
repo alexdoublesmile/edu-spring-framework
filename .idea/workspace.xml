@@ -2,12 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0ee4afb-3903-4bee-9bd5-9a4f50338623" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yet/spring/core/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yet/spring/core/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yet/spring/core/aspects/ConsoleLoggerLimitAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yet/spring/core/aspects/ConsoleLoggerLimitAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yet/spring/core/beans/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yet/spring/core/beans/Event.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/CacheFileEventLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/CacheFileEventLogger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/CombineEventLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/CombineEventLogger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/ConsoleEventLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/ConsoleEventLogger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/FileEventLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/FileEventLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yet/spring/core/spring/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yet/spring/core/spring/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yet/spring/core/spring/LoggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yet/spring/core/spring/LoggerConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/logger.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logger.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/loggers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/loggers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yet/spring/core/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yet/spring/core/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yet/spring/core/aspects/ConsoleLoggerLimitAspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yet/spring/core/aspects/ConsoleLoggerLimitAspect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yet/spring/core/spring/AppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yet/spring/core/spring/AppConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logger.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logger.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,23 +32,43 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/App.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/logger.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="24" column="116" selection-start-line="24" selection-start-column="96" selection-end-line="24" selection-end-column="116" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#868#997#1" expanded="true" />
-              </folding>
+            <state relative-caret-position="68">
+              <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/logger.properties">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/client.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+            <state relative-caret-position="34">
+              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/App.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-65">
+              <caret line="34" column="14" lean-forward="true" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="143" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/aspects/StatisticAspect.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="366">
+              <caret line="33" column="36" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -44,30 +76,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/spring.xml">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-119">
+              <caret line="5" column="56" lean-forward="true" selection-start-line="5" selection-start-column="56" selection-end-line="6" selection-end-column="68" />
+              <folding>
+                <element signature="e#1991#2004#0" expanded="true" />
+                <element signature="e#2020#2027#0" expanded="true" />
+                <element signature="e#2049#2058#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/aspects.xml">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
-              <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/aspects/ConsoleLoggerLimitAspect.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="22" column="116" selection-start-line="22" selection-start-column="116" selection-end-line="22" selection-end-column="116" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#771#796#1" expanded="true" />
-              </folding>
+              <caret line="19" column="45" lean-forward="true" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/spring/AppConfig.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/aspects/LoggingAspect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+            <state relative-caret-position="230">
+              <caret line="14" column="67" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,42 +109,21 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/spring/LoggerConfig.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/loggers.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
-              <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="13" column="54" selection-end-line="35" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/FileEventLogger.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/aspects/ConsoleLoggerLimitAspect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="36" column="68" selection-start-line="36" selection-start-column="68" selection-end-line="36" selection-end-column="68" />
+            <state relative-caret-position="374">
+              <caret line="31" column="71" selection-start-line="31" selection-start-column="71" selection-end-line="31" selection-end-column="71" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#546#547#0" expanded="true" />
-                <element signature="e#586#587#0" expanded="true" />
-                <element signature="e#1189#1190#0" expanded="true" />
-                <element signature="e#1221#1222#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/CacheFileEventLogger.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="808">
-              <caret line="55" column="53" lean-forward="true" selection-start-line="55" selection-start-column="53" selection-end-line="55" selection-end-column="53" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#921#922#0" expanded="true" />
-                <element signature="e#971#972#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -149,29 +161,33 @@
         <option value="$PROJECT_DIR$/src/main/resources/context.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/yet/spring/core/beans/EventType.java" />
         <option value="$PROJECT_DIR$/src/main/resources/db.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yet/spring/core/util/AwareBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yet/spring/core/util/Monitor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/EventLogger.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/AbstractLogger.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/loggers.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yet/spring/core/beans/Event.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/DefaultLogger.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yet/spring/core/beans/Client.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/yet/spring/core/beans/EventTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/client.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yet/spring/core/spring/AppConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yet/spring/core/spring/LoggerConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yet/spring/core/App.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/yet/spring/core/monitor/ConsoleLoggerMonitor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yet/spring/core/aspects/ConsoleLoggerMonitor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/CacheFileEventLogger.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/ConsoleEventLogger.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yet/spring/core/aspects/StatisticsAspect.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/loggers.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yet/spring/core/App.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/CombineEventLogger.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/ConsoleEventLogger.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yet/spring/core/aspects/StatisticAspect.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yet/spring/core/spring/AppConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yet/spring/core/spring/LoggerConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yet/spring/core/util/AwareBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yet/spring/core/util/Monitor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yet/spring/core/beans/Event.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/CacheFileEventLogger.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/FileEventLogger.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/logger.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/yet/spring/core/aspects/ConsoleLoggerLimitAspect.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/logger.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yet/spring/core/aspects/LoggingAspect.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/aspects.xml" />
       </list>
     </option>
   </component>
@@ -207,9 +223,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="CatdeaLogs" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="CatdeaLogs" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -284,6 +300,15 @@
               <item name="spring-core" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -316,7 +341,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1593608040460" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1593964072864" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -422,7 +447,10 @@
       <workItem from="1593410476461" duration="9135000" />
       <workItem from="1593444625031" duration="6308000" />
       <workItem from="1593505238778" duration="1207000" />
-      <workItem from="1593575304582" duration="5333000" />
+      <workItem from="1593575304582" duration="10178000" />
+      <workItem from="1593628008283" duration="1376000" />
+      <workItem from="1593662217147" duration="3208000" />
+      <workItem from="1593951190435" duration="7943000" />
     </task>
     <servers />
   </component>
@@ -435,7 +463,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72977000" />
+    <option name="totallyTimeSpent" value="90349000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
@@ -480,6 +508,18 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/CacheFileEventLogger.java</url>
+          <line>43</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.2.1.RELEASE/spring-aop-5.2.1.RELEASE.jar!/org/aopalliance/intercept/ConstructorInterceptor.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -521,30 +561,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/util/Monitor.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/util/AwareBean.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/EventLogger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/AbstractLogger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/loggers.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/DefaultLogger.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -572,24 +589,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/client.properties">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/aspectj/aspectjweaver/1.9.4/aspectjweaver-1.9.4.jar!/org/aspectj/lang/annotation/AfterReturning.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        <state relative-caret-position="136">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/beans/Client.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/aspectj/aspectjweaver/1.9.4/aspectjweaver-1.9.4-sources.jar!/org/aspectj/lang/annotation/AfterReturning.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        <state relative-caret-position="204">
+          <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/beans/Event.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/AbstractLogger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        <state relative-caret-position="170">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/CombineEventLogger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="33" column="13" lean-forward="true" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -598,22 +622,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/ConsoleEventLogger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        <state relative-caret-position="153">
+          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#236#237#0" expanded="true" />
-            <element signature="e#268#269#0" expanded="true" />
-            <element signature="e#308#309#0" expanded="true" />
-            <element signature="e#360#361#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/spring/LoggerConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+        <state relative-caret-position="377">
+          <caret line="40" column="11" lean-forward="true" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/util/AwareBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/util/Monitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/EventLogger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/beans/Event.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -624,32 +684,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/CombineEventLogger.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/spring/AppConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="31" column="60" selection-start-line="31" selection-start-column="60" selection-end-line="31" selection-end-column="60" />
+        <state relative-caret-position="360">
+          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#522#523#0" expanded="true" />
-            <element signature="e#560#561#0" expanded="true" />
-            <element signature="e#763#764#0" expanded="true" />
-            <element signature="e#829#830#0" expanded="true" />
-            <element signature="e#886#887#0" expanded="true" />
-            <element signature="e#918#919#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/beans/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/CacheFileEventLogger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/FileEventLogger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
+        <state relative-caret-position="578">
           <caret line="36" column="68" selection-start-line="36" selection-start-column="68" selection-end-line="36" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#546#547#0" expanded="true" />
-            <element signature="e#586#587#0" expanded="true" />
-            <element signature="e#1189#1190#0" expanded="true" />
-            <element signature="e#1221#1222#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/aspects/ConsoleLoggerLimitAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="31" column="71" selection-start-line="31" selection-start-column="71" selection-end-line="31" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -657,60 +734,69 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/logger.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/loggers/CacheFileEventLogger.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/client.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="808">
-          <caret line="55" column="53" lean-forward="true" selection-start-line="55" selection-start-column="53" selection-end-line="55" selection-end-column="53" />
+        <state relative-caret-position="34">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/aspects/LoggingAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="14" column="67" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#921#922#0" expanded="true" />
-            <element signature="e#971#972#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/spring/LoggerConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/loggers.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="13" column="54" selection-end-line="35" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/spring/AppConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/aspects.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="323">
+          <caret line="19" column="45" lean-forward="true" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="24" column="116" selection-start-line="24" selection-start-column="96" selection-end-line="24" selection-end-column="116" />
+        <state relative-caret-position="-65">
+          <caret line="34" column="14" lean-forward="true" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="143" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#868#997#1" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/aspects/ConsoleLoggerLimitAspect.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="22" column="116" selection-start-line="22" selection-start-column="116" selection-end-line="22" selection-end-column="116" />
+        <state relative-caret-position="-119">
+          <caret line="5" column="56" lean-forward="true" selection-start-line="5" selection-start-column="56" selection-end-line="6" selection-end-column="68" />
+          <folding>
+            <element signature="e#1991#2004#0" expanded="true" />
+            <element signature="e#2020#2027#0" expanded="true" />
+            <element signature="e#2049#2058#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yet/spring/core/aspects/StatisticAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="33" column="36" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#771#796#1" expanded="true" />
           </folding>
         </state>
       </provider>

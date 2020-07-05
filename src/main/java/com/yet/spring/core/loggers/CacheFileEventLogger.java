@@ -9,19 +9,20 @@ import javax.annotation.PreDestroy;
 import java.util.ArrayList;
 import java.util.List;
 
-@Component
-@DefaultLogger
+//@Component
+//@DefaultLogger
 public class CacheFileEventLogger extends FileEventLogger {
-    @Value("${cache.size}")
+//    @Value("${cache.size}")
     private int cacheSize;
     private List<Event> cache;
 
     public CacheFileEventLogger() {
     }
 
-    public CacheFileEventLogger(@Value("${logfile.name}") String fileName, int cacheSize) {
+    public CacheFileEventLogger(String fileName, int cacheSize) {
         super(fileName);
         this.cacheSize = cacheSize;
+        cache = new ArrayList<>(cacheSize);
     }
 
     public void logEvent(Event event) {
@@ -33,12 +34,12 @@ public class CacheFileEventLogger extends FileEventLogger {
         }
     }
 
-    @PostConstruct
-    private void init() {
-        cache = new ArrayList<>(cacheSize);
-    }
+//    @PostConstruct
+//    private void init() {
+//        cache = new ArrayList<>(cacheSize);
+//    }
 
-    @PreDestroy
+//    @PreDestroy
     private void destroy() {
         if (!cache.isEmpty()) {
             writeEventsFromCache();
@@ -53,7 +54,7 @@ public class CacheFileEventLogger extends FileEventLogger {
                 });
     }
 
-    @Value("#{fileEventLogger.name + ' with cache'}")
+//    @Value("#{fileEventLogger.name + ' with cache'}")
     @Override
     protected void setName(String name) {
         this.name = name;

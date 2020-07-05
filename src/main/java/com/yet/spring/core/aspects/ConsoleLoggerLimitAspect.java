@@ -11,24 +11,24 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-@Aspect
-@Component
+//@Aspect
+//@Component
 public class ConsoleLoggerLimitAspect {
     private final int maxCount;
     private final EventLogger alternativeLogger;
 
     private int currentCount = 0;
 
-    @Autowired
-    public ConsoleLoggerLimitAspect(@Value("${console.logger.max:2}") int maxCount, @Qualifier("cacheFileEventLogger") EventLogger logger) {
+//    @Autowired
+    public ConsoleLoggerLimitAspect(int maxCount, EventLogger logger) {
         this.maxCount = maxCount;
         this.alternativeLogger = logger;
     }
 
-    @Pointcut(value = "execution(* *.logEvent(com.yet.spring.core.beans.Event)) && within(com.yet.spring.core.loggers.ConsoleEventLogger) && args(evt)")
-    public void checkConsoleLimit(Event evt) { }
+//    @Pointcut(value = "execution(* *.logEvent(com.yet.spring.core.beans.Event)) && within(com.yet.spring.core.loggers.ConsoleEventLogger) && args(event)")
+    public void checkConsoleLimit(Event event) { }
 
-    @Around("checkConsoleLimit(evt)")
+//    @Around("checkConsoleLimit(evt)")
     public void aroundLogEvent(ProceedingJoinPoint joinPoint, Event evt) throws Throwable {
         if(currentCount < maxCount) {
             System.out.println("ConsoleEventLogger max count is not reached. Continue...");
